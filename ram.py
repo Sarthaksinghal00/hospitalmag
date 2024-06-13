@@ -53,6 +53,99 @@ class Hospital:
         lblref.grid(row=1,column=0,sticky=W)
         txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
         txtref.grid(row=1,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2,pady=6)
+        lblref.grid(row=2,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=2,column=1)
+
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=3,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=3,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=4,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=4,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=5,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=5,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=6,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=6,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=7,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=7,column=1)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=8,column=0,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=8,column=1)
+# ///////////// 2 part of the datafram left ====
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=0,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=0,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=1,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=1,column=3)
+        
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=2,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=2,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=3,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=3,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=4,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=4,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=5,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=5,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=6,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=6,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=7,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=7,column=3)
+
+        lblref=Label(DataframeLeft,font=("time new roman",12,"bold"),text="Refernce number  ",padx=2)
+        lblref.grid(row=8,column=2,sticky=W)
+        txtref=Entry(DataframeLeft,font=("time new roman",12,"bold"),width=35)
+        txtref.grid(row=8,column=3)
+
+       
+
+      
+
+
+
+
+
+
+
+
 
 
 
