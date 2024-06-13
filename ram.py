@@ -58,9 +58,9 @@ class Hospital:
 
 
 
-# root=Tk()
-# ob=Hospital(root)
-# root.mainloop()
+root=Tk()
+ob=Hospital(root)
+root.mainloop()
 
 
 
