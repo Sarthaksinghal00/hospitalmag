@@ -21,11 +21,11 @@ class Hospital:
         Dataframe.place(x=0,y=130,width=1330,height=400)
 
         DataframeLeft=LabelFrame(Dataframe,bd=10,padx=20,relief=RIDGE,
-                                       font=("time new roman",12,"bold"),text="patient Information")
+                                       font=("time new roman",12,"bold"),text="Patient Information")
         DataframeLeft.place(x=0,y=5,width=980,height=350)
 
 
-        DataframeRight=LabelFrame(Dataframe,bd=10,padx=20,relief=RIDGE,
+        DataframeRight=LabelFrame(Dataframe,bd=5,padx=30,pady=10,relief=RIDGE,
                                        font=("time new roman",12,"bold"),text="Presceription")
         DataframeRight.place(x=990,y=5,width=260,height=350)
 
@@ -35,7 +35,7 @@ class Hospital:
         Buttonframe.place(x=0,y=530,width=1330,height=70)
         
         
-        # ===========detal  frame ================
+        # ===========detail  frame ================
         Detailsframe=Frame(self.root,bd=20,relief=RIDGE)
         Detailsframe.place(x=0,y=600,width=1330,height=90)
 
@@ -137,6 +137,82 @@ class Hospital:
 
         # ===================DAteFram right====================
 
+        self.txtPrescription =Text(DataframeRight,font=("time new roman",12,"bold"),width=22,height=15,padx=1,pady=2)
+        self.txtPrescription.grid(row=0,column=0)
+
+        # ======================Buttons=========================
+
+        btnPrescription=Button(Buttonframe,text="Prescription",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnPrescription.grid(row=0,column=0)
+
+        btnPrescriptionDate=Button(Buttonframe,text="Prescription Data ",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnPrescriptionDate.grid(row=0,column=1)
+
+        btnUpdate=Button(Buttonframe,text="Update",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnUpdate.grid(row=0,column=2)
+
+        btnDelete=Button(Buttonframe,text="Delete",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnDelete.grid(row=0,column=3)
+
+        btnClear=Button(Buttonframe,text="Clear",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnClear.grid(row=0,column=4) 
+
+        btnExit=Button(Buttonframe,text="Exit",bg="green",fg="white",font=("time new roman",12,"bold"),width=15)
+        btnExit.grid(row=0,column=5)
+
+        # ===================   Table ============================
+        # =================== Scroll  bar =========================
+        scroll_x=ttk.Scrollbar(Detailsframe,orient=HORIZONTAL)
+        scroll_y=ttk.Scrollbar(Detailsframe,orient=VERTICAL)
+        self.hospital=ttk.Treeview(Detailsframe,columns=("nameofTable","ref","dose",
+        "nooftablets","lot","issuedate","expdate","dailydose","storage","nhsnumber","pname","dob","address"),xscrollcommand=scroll_x.set,yscrollcommand=scroll_y.set)
+
+        scroll_x.pack(side=BOTTOM,fill=X)
+        scroll_y.pack(side=RIGHT,fill=Y)
+
+
+        scroll_x.config(command=self.hospital.xview)
+        scroll_y.config(command=self.hospital.yview)
+
+        self.hospital.heading("nameofTable", text="Name Of Table")
+        self.hospital.heading("ref", text="Reference No.")
+        self.hospital.heading("dose", text="Dose")
+        self.hospital.heading("nooftablets", text="No Of Tablets")
+        self.hospital.heading("lot", text="Lot")
+        self.hospital.heading("issuedate", text="Issue Date")
+        self.hospital.heading("expdate", text="Exp Date")
+        self.hospital.heading("dailydose", text="Daily Date")
+        self.hospital.heading("storage", text="Storage")
+        self.hospital.heading("nhsnumber", text="NHS Number")
+        self.hospital.heading("pname", text="Patient Name")
+        self.hospital.heading("dob", text="DOB")
+        self.hospital.heading("address", text="Address")
+        
+        self.hospital["show"] = "headings"
+        
+        self.hospital.column("nameofTable", width=100)
+        self.hospital.column("ref", width=100)
+        self.hospital.column("dose", width=100)
+        self.hospital.column("nooftablets", width=100)
+        self.hospital.column("lot", width=100)
+        self.hospital.column("issuedate", width=100)
+        self.hospital.column("expdate", width=100)
+        self.hospital.column("dailydose", width=100)
+        self.hospital.column("storage", width=100)
+        self.hospital.column("nhsnumber", width=100)
+        self.hospital.column("pname", width=100)
+        self.hospital.column("dob", width=100)
+        self.hospital.column("address", width=100)
+
+
+        self.hospital.pack(fill=BOTH, expand=1)
+
+
+
+
+
+
+
 
 
 
@@ -157,7 +233,7 @@ class Hospital:
 
 
 root=Tk()
-ob=Hospital(root)
+app=Hospital(root)
 root.mainloop()
 
 
